@@ -4,6 +4,7 @@ pipeline {
     
     environment {
         PASS = credentials('registry-pass') 
+        newKey = credentials('ssh-key')
     }
 
     stages {
